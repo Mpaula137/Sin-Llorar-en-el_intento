@@ -54,13 +54,13 @@ Dado un número real x, construya un programa que permita determinar si el núme
 -Cero (0): "El número x es el neutro para la suma"
 
 ```
-x:input("Escribe un numero:")
-x= int
-if (x == 0):
-  print("Es un numero neutro")
-elif ( x>0):
-  print("Es un numero positivo")
-elif ( x<0):
-  print( "Es un numero negativo")
+x: int
+x=input("Escribe un numero:")
+if x == "0":
+    print("Es un numero neutro")
+if  x > "0":
+     print("Es un numero positivo")
+elif  x < "0":
+    print( "Es un numero negativo")
   
 ```
