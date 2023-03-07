@@ -37,7 +37,8 @@ else:
  Dado un carácter, construya un programa en Python para determinar si el carácter es un dígito o no.
  
  ```
- x= input("Escriba el caracter que desee:")
+ x: float
+ x= float(input("Escriba el caracter que desee:"))
  
 if(x >= '0' and x <= '9'):
     print("es un digito")
@@ -55,12 +56,47 @@ Dado un número real x, construya un programa que permita determinar si el núme
 
 ```
 x: int
-x=input("Escribe un numero:")
-if x == "0":
-    print("Es un numero neutro")
-if  x > "0":
-     print("Es un numero positivo")
-elif  x < "0":
-    print( "Es un numero negativo")
+x=int(input("Escribe un numero:"))
+if (x == 0.0):
+  print("Es un numero neutro")
+elif ( x>0.0):
+  print("Es un numero positivo")
+elif ( x<0.0):
+  print("Es un numero negativo")
   
 ```
+ ## Cirulo
+ Dado el centro y el radio de un círculo, determinar si un punto de R2 pertenece o no al interior del círculo
+  
+  ```
+  x=float
+y=float
+r=float
+r=float(input("digitar el radio: "))
+x=float(input("digitar x: "))
+y=float(input("digitar y: "))
+if (x*x + y*y > r**2):
+    print("esta por fuera de la circunferencia de radio  " + str(r))
+elif (x*x + y*y  == r**2):
+    print("esta justo sobre la circunferencia de radio  " + str(r))
+else:
+    print("esta dentro de la circunferencia")  
+```
+
+## Triangulo o no
+Dadas tres longitudes positivas, determinar si con esas longitudes se puede construir un triángulo.
+
+```
+a: float
+b: float
+c: float
+a= float(input("Longitud del lado 1:"))
+b= float(input("longitud del lado 2:"))
+c= float(input("longitud del lado 3:"))
+if a+b>c and a+c>c and b+c>a :
+    print("se puede hacer el triangulo")
+else:
+    print("no se puede hace el triangulo")
+ ```
+ 
+ ## Con esto terminamos los problemas del reto de hoy.
